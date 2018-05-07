@@ -12,8 +12,12 @@ import TabPageViewController
 
 class MainTabPageViewController: TabPageViewController {
     
+    
     override init() {
         super.init()
+        
+        let tc = storyboard?.instantiateViewControllerWithIdentifier("pageView") as! PagenewViewController
+        
         let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ListViewController")
         
         let vc2 = UIViewController()

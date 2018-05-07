@@ -4,4 +4,1525 @@
    <FileRef
       location = "group:Frito1.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:Pods"
+      name = "Pods">
+      <FileRef
+         location = "group:Pods.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:TabPageViewController"
+         name = "TabPageViewController">
+         <FileRef
+            location = "group:LICENSE">
+         </FileRef>
+         <FileRef
+            location = "group:README.md">
+         </FileRef>
+         <Group
+            location = "group:Sources"
+            name = "Sources">
+            <FileRef
+               location = "group:TabView.xib">
+            </FileRef>
+            <FileRef
+               location = "group:TabCollectionCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:TabView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:TabPageViewController.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:TabCollectionCell.xib">
+            </FileRef>
+            <FileRef
+               location = "group:TabPageViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:TabPageOption.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Target Support Files"
+         name = "Target Support Files">
+         <Group
+            location = "group:TabPageViewController"
+            name = "TabPageViewController">
+            <FileRef
+               location = "group:TabPageViewController-umbrella.h">
+            </FileRef>
+            <FileRef
+               location = "group:TabPageViewController.modulemap">
+            </FileRef>
+            <FileRef
+               location = "group:TabPageViewController-prefix.pch">
+            </FileRef>
+            <FileRef
+               location = "group:TabPageViewController-dummy.m">
+            </FileRef>
+            <FileRef
+               location = "group:TabPageViewController.xcconfig">
+            </FileRef>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:SVProgressHUD"
+            name = "SVProgressHUD">
+            <FileRef
+               location = "group:SVProgressHUD-dummy.m">
+            </FileRef>
+            <FileRef
+               location = "group:SVProgressHUD-umbrella.h">
+            </FileRef>
+            <FileRef
+               location = "group:SVProgressHUD.modulemap">
+            </FileRef>
+            <FileRef
+               location = "group:SVProgressHUD.xcconfig">
+            </FileRef>
+            <FileRef
+               location = "group:SVProgressHUD-prefix.pch">
+            </FileRef>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:RealmSwift"
+            name = "RealmSwift">
+            <FileRef
+               location = "group:RealmSwift.modulemap">
+            </FileRef>
+            <FileRef
+               location = "group:RealmSwift-dummy.m">
+            </FileRef>
+            <FileRef
+               location = "group:RealmSwift-prefix.pch">
+            </FileRef>
+            <FileRef
+               location = "group:RealmSwift.xcconfig">
+            </FileRef>
+            <FileRef
+               location = "group:RealmSwift-umbrella.h">
+            </FileRef>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Realm"
+            name = "Realm">
+            <FileRef
+               location = "group:Realm.modulemap">
+            </FileRef>
+            <FileRef
+               location = "group:Realm-dummy.m">
+            </FileRef>
+            <FileRef
+               location = "group:Realm.xcconfig">
+            </FileRef>
+            <FileRef
+               location = "group:Realm-prefix.pch">
+            </FileRef>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Pods-Frito1"
+            name = "Pods-Frito1">
+            <FileRef
+               location = "group:Pods-Frito1.release.xcconfig">
+            </FileRef>
+            <FileRef
+               location = "group:Pods-Frito1-dummy.m">
+            </FileRef>
+            <FileRef
+               location = "group:Pods-Frito1.modulemap">
+            </FileRef>
+            <FileRef
+               location = "group:Pods-Frito1-acknowledgements.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Pods-Frito1-frameworks.sh">
+            </FileRef>
+            <FileRef
+               location = "group:Pods-Frito1-umbrella.h">
+            </FileRef>
+            <FileRef
+               location = "group:Pods-Frito1-resources.sh">
+            </FileRef>
+            <FileRef
+               location = "group:Pods-Frito1.debug.xcconfig">
+            </FileRef>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Pods-Frito1-acknowledgements.markdown">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:Manifest.lock">
+      </FileRef>
+      <Group
+         location = "group:Local Podspecs"
+         name = "Local Podspecs">
+      </Group>
+      <Group
+         location = "group:SVProgressHUD"
+         name = "SVProgressHUD">
+         <FileRef
+            location = "group:LICENSE">
+         </FileRef>
+         <Group
+            location = "group:SVProgressHUD"
+            name = "SVProgressHUD">
+            <FileRef
+               location = "group:SVRadialGradientLayer.m">
+            </FileRef>
+            <FileRef
+               location = "group:SVIndefiniteAnimatedView.h">
+            </FileRef>
+            <FileRef
+               location = "group:SVProgressHUD.h">
+            </FileRef>
+            <FileRef
+               location = "group:SVProgressAnimatedView.m">
+            </FileRef>
+            <FileRef
+               location = "group:SVRadialGradientLayer.h">
+            </FileRef>
+            <FileRef
+               location = "group:SVProgressHUD.m">
+            </FileRef>
+            <FileRef
+               location = "group:SVIndefiniteAnimatedView.m">
+            </FileRef>
+            <FileRef
+               location = "group:SVProgressHUD.bundle">
+            </FileRef>
+            <FileRef
+               location = "group:SVProgressAnimatedView.h">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:README.md">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:RealmSwift"
+         name = "RealmSwift">
+         <FileRef
+            location = "group:LICENSE">
+         </FileRef>
+         <Group
+            location = "group:RealmSwift"
+            name = "RealmSwift">
+            <FileRef
+               location = "group:RealmConfiguration.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Realm.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Aliases.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Property.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Error.swift">
+            </FileRef>
+            <FileRef
+               location = "group:RealmCollection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Sync.swift">
+            </FileRef>
+            <FileRef
+               location = "group:LinkingObjects.swift">
+            </FileRef>
+            <FileRef
+               location = "group:SortDescriptor.swift">
+            </FileRef>
+            <FileRef
+               location = "group:SwiftVersion.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ThreadSafeReference.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ObjectiveCSupport.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Results.swift">
+            </FileRef>
+            <FileRef
+               location = "group:List.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Util.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ObjectSchema.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Schema.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Migration.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Object.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Optional.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:README.md">
+         </FileRef>
+         <FileRef
+            location = "group:build.sh">
+         </FileRef>
+         <Group
+            location = "group:Realm"
+            name = "Realm">
+         </Group>
+      </Group>
+      <Group
+         location = "group:Headers"
+         name = "Headers">
+      </Group>
+      <Group
+         location = "group:Realm"
+         name = "Realm">
+         <Group
+            location = "group:core"
+            name = "core">
+            <FileRef
+               location = "group:librealmcore-ios.a">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:LICENSE">
+         </FileRef>
+         <Group
+            location = "group:include"
+            name = "include">
+            <FileRef
+               location = "group:RLMObjectBase.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMArray_Private.h">
+            </FileRef>
+            <Group
+               location = "group:impl"
+               name = "impl">
+               <Group
+                  location = "group:apple"
+                  name = "apple">
+                  <FileRef
+                     location = "group:external_commit_helper.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:keychain_helper.hpp">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:external_commit_helper.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:collection_notifier.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:transact_log_handler.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:results_notifier.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:object_notifier.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:object_accessor_impl.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:list_notifier.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:weak_realm_notifier.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:primitive_list_notifier.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:realm_coordinator.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:notification_wrapper.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:collection_change_builder.hpp">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:RLMSyncCredentials.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObjectBase_Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMThreadSafeReference.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObjectBase_Dynamic.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncUser.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncSubscription.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMAccessor.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:results.hpp">
+            </FileRef>
+            <Group
+               location = "group:core"
+               name = "core">
+               <FileRef
+                  location = "group:realm.hpp">
+               </FileRef>
+               <Group
+                  location = "group:realm"
+                  name = "realm">
+                  <FileRef
+                     location = "group:column_fwd.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:timestamp.hpp">
+                  </FileRef>
+                  <Group
+                     location = "group:impl"
+                     name = "impl">
+                     <FileRef
+                        location = "group:simulated_failure.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:transact_log.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:sequential_getter.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:cont_transact_hist.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:clamped_hex_dump.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:output_stream.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:input_stream.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:destroy_guard.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:array_writer.hpp">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:group_shared.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:descriptor_fwd.hpp">
+                  </FileRef>
+                  <Group
+                     location = "group:metrics"
+                     name = "metrics">
+                     <FileRef
+                        location = "group:query_info.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:transaction_info.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:metrics.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:metric_timer.hpp">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:column_mixed_tpl.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:disable_sync_to_disk.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:query_operators.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:column_backlink.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:lang_bind_helper.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:column_timestamp.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:group_writer.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:array_blob.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:column_linklist.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:unicode.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:column_tpl.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:array_string.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:group.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:array_basic.hpp">
+                  </FileRef>
+                  <Group
+                     location = "group:util"
+                     name = "util">
+                     <FileRef
+                        location = "group:to_string.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:call_with_tuple.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:logger.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:websocket.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:serializer.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:utf8.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:basic_system_errors.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:config.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:hex_dump.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:time.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:features.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:scope_exit.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:buffer_stream.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:string_buffer.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:file.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:enum.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:misc_errors.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:safe_int_ops.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:bind_ptr.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:inspect.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:errno.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:priority_queue.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:http.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:type_traits.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:interprocess_condvar.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:interprocess_mutex.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:aes_cryptor.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:random.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:any.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:network_ssl.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:type_list.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:optional.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:assert.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:uri.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:memory_stream.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:shared_ptr.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:buffer.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:encrypted_file_mapping.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:compression.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:miscellaneous.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:cf_ptr.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:json_parser.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:network.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:file_mapper.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:thread.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:load_file.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:terminate.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:base64.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:overload.hpp">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:array_binary.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:version_id.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:table_view.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:array_string_long.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:data_type.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:link_view_fwd.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:spec.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:array.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:array_basic_tpl.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:alloc.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:array_integer.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:views.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:column_type_traits.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:array_direct.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:array_blobs_big.hpp">
+                  </FileRef>
+                  <Group
+                     location = "group:parser"
+                     name = "parser">
+                     <FileRef
+                        location = "group:subquery_expression.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:collection_operator_expression.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:parser.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:query_builder.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:property_expression.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:value_expression.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:expression_container.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:keypath_mapping.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:parser_utils.hpp">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:group_shared_options.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:version.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:column_link.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:query_expression.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:alloc_slab.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:null.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:mixed.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:history.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:column_type.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:binary_data.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:row.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:handover_defs.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bptree.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:column_table.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:query_engine.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:column_string_enum.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:string_data.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:table_ref.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:replication.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:link_view.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:utilities.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:chunked_binary.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:exceptions.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:realm_nmmintrin.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:descriptor.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:column.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:column_mixed.hpp">
+                  </FileRef>
+                  <Group
+                     location = "group:sync"
+                     name = "sync">
+                     <FileRef
+                        location = "group:crypto.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:protocol.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:instructions.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:object_id.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:server.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:transform.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:permissions.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:instruction_replication.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:server_configuration.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:changeset_encoder.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:changeset_cooker.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:version.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:feature_token.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:object.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:history.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:metrics.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:changeset.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:crypto_server.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:client.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:changeset_parser.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:instruction_applier.hpp">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:query.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:query_conditions.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:index_string.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:owned_data.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:olddatetime.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:column_linkbase.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:column_binary.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:table.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:column_string.hpp">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:RLMSyncUser_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObject_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSchema_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMConstants.h">
+            </FileRef>
+            <Group
+               location = "group:util"
+               name = "util">
+               <Group
+                  location = "group:apple"
+                  name = "apple">
+                  <FileRef
+                     location = "group:event_loop_signal.hpp">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:time.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:uuid.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:tagged_bool.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:atomic_shared_ptr.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:aligned_union.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:event_loop_signal.hpp">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:RLMRealm_Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncUtil.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMRealm_Dynamic.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMThreadSafeReference_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncUtil_Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSchema.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMCollection_Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMRealmUtil.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMResults_Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMPlatform.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMCollection_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMRealmConfiguration_Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMNetworkClient.h">
+            </FileRef>
+            <FileRef
+               location = "group:list.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMArray_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMQueryUtil.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:feature_checks.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:object_store.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncManager.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMRealm+Sync.h">
+            </FileRef>
+            <FileRef
+               location = "group:object_schema.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMProperty.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMResults_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMMigration_Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMAccessor.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncPermissionResults.h">
+            </FileRef>
+            <FileRef
+               location = "group:binding_callback_thread_observer.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncConfiguration.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSError+RLMSync.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncPermission_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:property.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMProperty_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObjectSchema_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:object.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObject.h">
+            </FileRef>
+            <FileRef
+               location = "group:collection_notifications.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSwiftBridgingHeader.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObjectSchema_Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMArray.h">
+            </FileRef>
+            <FileRef
+               location = "group:object_accessor.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:Realm.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMCollection.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObjectStore.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncSessionRefreshHandle.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:shared_realm.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMResults.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObservation.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMAnalytics.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMRealm.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMClassInfo.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMJSONModels.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncSessionRefreshHandle.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObjectSchema.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncSession.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSchema_Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMPredicateUtil.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObject_Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMRealmConfiguration_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncSession_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMProperty_Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMListBase.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncPermission.h">
+            </FileRef>
+            <FileRef
+               location = "group:thread_safe_reference.hpp">
+            </FileRef>
+            <Group
+               location = "group:sync"
+               name = "sync">
+               <Group
+                  location = "group:impl"
+                  name = "impl">
+                  <Group
+                     location = "group:apple"
+                     name = "apple">
+                     <FileRef
+                        location = "group:network_reachability_observer.hpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:system_configuration.hpp">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:sync_file.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sync_metadata.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:network_reachability.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sync_client.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:work_queue.hpp">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:sync_session.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:sync_user.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:partial_sync.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:sync_permission.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:sync_manager.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:sync_config.hpp">
+               </FileRef>
+               <FileRef
+                  location = "group:subscription_state.hpp">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:RLMSyncConfiguration_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMRealmConfiguration.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMMigration.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncConfiguration_Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:schema.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSwiftSupport.h">
+            </FileRef>
+            <FileRef
+               location = "group:execution_context_id.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMOptionalBase.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncManager_Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMRealm_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:binding_context.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:index_set.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMPrefix.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncUtil_Private.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMRealmConfiguration+Sync.h">
+            </FileRef>
+            <FileRef
+               location = "group:RLMUtil.hpp">
+            </FileRef>
+            <FileRef
+               location = "group:RLMUpdateChecker.hpp">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:README.md">
+         </FileRef>
+         <FileRef
+            location = "group:build.sh">
+         </FileRef>
+         <Group
+            location = "group:Realm"
+            name = "Realm">
+            <FileRef
+               location = "group:RLMManagedArray.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMCollection.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMOptionalBase.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMAccessor.mm">
+            </FileRef>
+            <FileRef
+               location = "group:NSError+RLMSync.m">
+            </FileRef>
+            <FileRef
+               location = "group:RLMListBase.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMAnalytics.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMResults.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObservation.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMProperty.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObjectBase.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSchema.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncSession.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMJSONModels.m">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncPermission.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMMigration.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMRealm.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSwiftSupport.m">
+            </FileRef>
+            <FileRef
+               location = "group:RLMRealmConfiguration.mm">
+            </FileRef>
+            <FileRef
+               location = "group:Realm.modulemap">
+            </FileRef>
+            <FileRef
+               location = "group:RLMQueryUtil.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMArray.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObjectSchema.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObjectStore.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncSessionRefreshHandle.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncPermissionResults.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMNetworkClient.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncSubscription.mm">
+            </FileRef>
+            <Group
+               location = "group:ObjectStore"
+               name = "ObjectStore">
+               <Group
+                  location = "group:src"
+                  name = "src">
+                  <Group
+                     location = "group:impl"
+                     name = "impl">
+                     <Group
+                        location = "group:apple"
+                        name = "apple">
+                        <FileRef
+                           location = "group:keychain_helper.cpp">
+                        </FileRef>
+                        <FileRef
+                           location = "group:external_commit_helper.cpp">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:primitive_list_notifier.cpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:realm_coordinator.cpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:collection_change_builder.cpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:list_notifier.cpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:weak_realm_notifier.cpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:collection_notifier.cpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:transact_log_handler.cpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:results_notifier.cpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:object_notifier.cpp">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:thread_safe_reference.cpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:schema.cpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:index_set.cpp">
+                  </FileRef>
+                  <Group
+                     location = "group:util"
+                     name = "util">
+                     <FileRef
+                        location = "group:uuid.cpp">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:object.cpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:collection_notifications.cpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:placeholder.cpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:shared_realm.cpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:list.cpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:object_store.cpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:object_schema.cpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:binding_callback_thread_observer.cpp">
+                  </FileRef>
+                  <Group
+                     location = "group:sync"
+                     name = "sync">
+                     <Group
+                        location = "group:impl"
+                        name = "impl">
+                        <Group
+                           location = "group:apple"
+                           name = "apple">
+                           <FileRef
+                              location = "group:system_configuration.cpp">
+                           </FileRef>
+                           <FileRef
+                              location = "group:network_reachability_observer.cpp">
+                           </FileRef>
+                        </Group>
+                        <FileRef
+                           location = "group:work_queue.cpp">
+                        </FileRef>
+                        <FileRef
+                           location = "group:sync_file.cpp">
+                        </FileRef>
+                        <FileRef
+                           location = "group:sync_metadata.cpp">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:sync_config.cpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:sync_manager.cpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:partial_sync.cpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:sync_permission.cpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:sync_session.cpp">
+                     </FileRef>
+                     <FileRef
+                        location = "group:sync_user.cpp">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:results.cpp">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:RLMPredicateUtil.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMUpdateChecker.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMClassInfo.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMThreadSafeReference.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncCredentials.m">
+            </FileRef>
+            <FileRef
+               location = "group:RLMConstants.m">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncConfiguration.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncUtil.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncManager.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMRealmConfiguration+Sync.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMUtil.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMRealm+Sync.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMSyncUser.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMObject.mm">
+            </FileRef>
+            <FileRef
+               location = "group:RLMRealmUtil.mm">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
 </Workspace>

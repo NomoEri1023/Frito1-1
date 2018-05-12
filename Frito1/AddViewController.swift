@@ -7,37 +7,74 @@
 //
 
 import UIKit
+import RealmSwift
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController,UITextFieldDelegate{
     
-    @IBOutlet var Name: UITextField!
-    
-    
-    @IBOutlet var SaveCode: UITextField!
-    
-    
+    @IBOutlet var shouhin: UILabel!
+    @IBOutlet var kosu: UILabel!
+    @IBOutlet var Text: UITextField!
+    @IBOutlet var kazu: UILabel!
+    @IBOutlet var mystepper: UIStepper!
+    @IBAction func mystepperAction(_ sender: UIStepper) {
+        
+        kazu.isHidden = false
+        kazu.text = String(mystepper.value)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.SaveCode.keyboardType = UIKeyboardType.numberPad
-        // Do any additional setup after loading the view.
-    }
-
+        Text.delegate = self
+    }    // Do any additional setup after loading the view.
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return false
     }
-    */
+    
+    @IBAction func tapView(_ sender: Any) {
+        view.endEditing(true)
+    }
 
+    @IBAction func addButtonTapped(_ sender: Any) {
+       let realm = try! Realm()
+        // MyItemObjectモデルのデータをIdの降順で取得
+        let lastItem = realm.objects(Shouhin.self).sorted(byKeyPath: "id", ascending: false)
+        var addId: Int = 1
+        if lastItem.count > 0 {
+            addId = lastItem[0].id + 1
+        }
+        
+        // 登録時に使用するIDを取得
+        let addItemObj = Shouhin()
+        addItemObj.id = addId
+        addItemObj.name = Text.text!
+        // 登録処理
+        try! realm.write {
+            realm.add(addItemObj, update: true)
+        }
+        
+        // 前の画面に戻る処理を作成
+        dismiss(animated: true, completion: nil)
+    }
+        
+        
+        
 }
+/*
+ // MARK: - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ // Get the new view controller using segue.destinationViewController.
+ // Pass the selected object to the new view controller.
+ }
+ */
+
+

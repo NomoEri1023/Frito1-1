@@ -11,6 +11,9 @@ import RealmSwift
 class Shouhin: Object {
     @objc dynamic var name = ""
     @objc dynamic var number: Float = 0
-    
+    @objc dynamic var id: Int = 1
+    override static func primaryKey() -> String {
+        return "id"
+    }
     
 }

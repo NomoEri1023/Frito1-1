@@ -12,104 +12,49 @@ import RealmSwift
 
 class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
-    @IBOutlet weak var tableView: UITableView!
-
-    
-    
-    var shouhinItem: [Shouhin] = []
-    
-    
-    
+    @IBOutlet var myTableView: UITableView!
+    var FoodItems: [Shouhin] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        myTableView.delegate = self
+        myTableView.dataSource = self
         
-        
-        do{
-            let realm = try! Realm()
-            shouhinItem = realm.objects(Shouhin.self)
-            tableView.reloadData()
-        } catch {
-            
-        }
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        // セル数を返却
+        return FoodItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+        // itemNameをセルに表示
+        cell.textLabel?.text = FoodItems[indexPath.row].name
         return cell
     }
     
-    // 追加 画面が表示される際などにtableViewのデータを再読み込みする
-    func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        let realm = try! Realm()
-        let shouhinItemObj = realm.objects(Shouhin.self)
-        shouhinItem = []
-        shouhinItemObj.forEach { item in
-            shouhinItem.append(item)
-            tableView.reloadData()
-            
-            func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-                // セル数を返却
-                return shouhinItem.count
-            }
-            
-            func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-                let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-                // itemNameをセルに表示
-                cell.textLabel?.text = shouhinItem [indexPath.row].itemName
-                return cell
-            }
-            
-        }
-        
-        
-        
-        
-        
-        
-        func save() {
-            do {
-                let realm = try! Realm()
-                try realm.write {
-                    realm.add(self.myshouhin)
-                }
-                
-            } catch {
-                
-            }
-            
-        }
-        
-        func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-            
-            
-            if(editingStyle == UITableViewCellEditingStyle.delete) {
-                do{
-                    let realm = try Realm()
-                    try realm.write {
-                        realm.delete(self.shouhinItem[indexPath.row])
-                    }
-                    tableView.deleteRows(at: [indexPath as IndexPath], with: UITableViewRowAnimation.fade)
-                }catch{
-                }
-                tableView.reloadData()
-            }
-        }
-        
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-    
-    
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // 一覧取得
+        let realm = try! Realm()
+        let shouhins = realm.objects(Shouhin.self)
+        FoodItems = []
+        shouhins.forEach { item in
+            FoodItems.append(item)
+        }
+        
+        // Top画面表示時にテーブル内容をリロード
+        myTableView.reloadData()
+    }
     
     
 }

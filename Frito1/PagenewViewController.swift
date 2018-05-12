@@ -8,11 +8,47 @@
 
 import UIKit
 import TabPageViewController
+import RealmSwift
 
 class PagenewViewController: TabPageViewController {
-
+    
+        var addBtn: UIBarButtonItem!
+    
     override func viewDidLoad() {
+        
+        let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ListViewController")
+        vc1.view.backgroundColor = UIColor(red: 251/255, green: 252/255, blue: 149/255, alpha: 1.0)
+        let vc2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ListViewController")
+        vc2.view.backgroundColor = UIColor(red: 149/255, green: 218/255, blue: 252/255, alpha: 1.0)
+        let vc3 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ListViewController")
+        vc3.view.backgroundColor = UIColor(red: 244/255, green: 211/255, blue: 94/255, alpha: 1.0)
+        let vc4 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ListViewController")
+        vc4.view.backgroundColor = UIColor(red: 149/255, green: 252/255, blue: 197/255, alpha: 1.0)
+        let vc5 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ListViewController")
+        vc5.view.backgroundColor = UIColor(red: 252/255, green: 182/255, blue: 106/255, alpha: 1.0)
+        let vc6 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ListViewController")
+        vc6.view.backgroundColor = UIColor(red: 8/255, green: 61/255, blue: 119/255, alpha: 1.0)
+        let vc7 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ListViewController")
+        vc7.view.backgroundColor = UIColor(red: 8/255, green: 61/255, blue: 119/255, alpha: 1.0)
+        let vc8 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ListViewController")
+        vc8.view.backgroundColor = UIColor(red: 8/255, green: 61/255, blue: 119/255, alpha: 1.0)
+        let vc9 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ListViewController")
+        vc9.view.backgroundColor = UIColor(red: 8/255, green: 61/255, blue: 119/255, alpha: 1.0)
+        let vc10 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ListViewController")
+        vc10.view.backgroundColor = UIColor(red: 8/255, green: 61/255, blue: 119/255, alpha: 1.0)
+        let vc11 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ListViewController")
+        vc11.view.backgroundColor = UIColor(red: 8/255, green: 61/255, blue: 119/255, alpha: 1.0)
+        
+        
+        tabItems = [(vc1, "肉"), (vc2, "魚介"), (vc3, "卵・乳製品"), (vc4, "野菜類"), (vc5, "果物"), (vc6, "加工食品"), (vc7, "穀類"), (vc8, "調味料"), (vc9, "惣菜"), (vc10, "飲料"), (vc11, "菓子")]
+        isInfinity = true
+        
         super.viewDidLoad()
+        
+        self.title = "一覧"
+        
+        addBtn = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(PagenewViewController.addBtnTapped(_:)) )
+        self.navigationItem.rightBarButtonItem = addBtn
 
         // Do any additional setup after loading the view.
     }
@@ -26,6 +62,14 @@ class PagenewViewController: TabPageViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @objc func addBtnTapped(_ sender: UIBarButtonItem) {
+        
+    let ad = storyboard?.instantiateViewController(withIdentifier: "add") as! AddViewController
+        
+        navigationController?.pushViewController(ad, animated: true)
+        
+        
+    }
 
     /*
     // MARK: - Navigation

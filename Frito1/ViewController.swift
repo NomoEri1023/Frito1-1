@@ -7,16 +7,37 @@
 //
 
 import UIKit
-
+import TabPageViewController
 
 class ViewController: UIViewController {
     
-    @IBAction func Fridge_CheckButton(_ button: UIButton) {
-        let tc = MainTabPageViewController()
-        navigationController?.pushViewController(tc, animated: true)
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
+   
+    @IBAction func FridgeCheck(_ sender: Any) {
+    
+    
+        let tc = storyboard?.instantiateViewController(withIdentifier: "pageView") as! PagenewViewController
+        
+        
+        
+        let nc = UINavigationController()
+        nc.viewControllers = [tc]
+        
+        var option = TabPageOption()
+        option.currentColor = UIColor(red: 246/255, green: 175/255, blue: 32/255, alpha: 1.0)
+        tc.option = option
+        navigationController?.pushViewController(tc, animated: true)
+    }
 }
     
 

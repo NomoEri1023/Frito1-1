@@ -12,7 +12,7 @@ import RealmSwift
 
 class PagenewViewController: TabPageViewController {
     
-        var addBtn: UIBarButtonItem!
+    var addBtn: UIBarButtonItem!
     
     override func viewDidLoad() {
         
@@ -49,12 +49,7 @@ class PagenewViewController: TabPageViewController {
         
         addBtn = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(PagenewViewController.addBtnTapped(_:)) )
         self.navigationItem.rightBarButtonItem = addBtn
-
         // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func pushItem(_ sender: UIBarButtonItem) {
-        print("Push Navi Item")
     }
     
     override func didReceiveMemoryWarning() {
@@ -62,23 +57,23 @@ class PagenewViewController: TabPageViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     @objc func addBtnTapped(_ sender: UIBarButtonItem) {
         
-    let ad = storyboard?.instantiateViewController(withIdentifier: "add") as! AddViewController
+        let ad = storyboard?.instantiateViewController(withIdentifier: "add") as! AddViewController
         
         navigationController?.pushViewController(ad, animated: true)
         
         
     }
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

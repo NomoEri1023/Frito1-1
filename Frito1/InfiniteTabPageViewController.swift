@@ -43,7 +43,7 @@ class InfiniteTabPageViewController: TabPageViewController {
     }
     
     
-    func clickAddButton(){
+    @objc func clickAddButton(){
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -43,7 +43,7 @@ class AddViewController: UIViewController,UITextFieldDelegate{
     }
 
     @IBAction func addButtonTapped(_ sender: Any) {
-       let realm = try! Realm()
+        let realm = try! Realm()
         // MyItemObjectモデルのデータをIdの降順で取得
         let lastItem = realm.objects(Shouhin.self).sorted(byKeyPath: "id", ascending: false)
         var addId: Int = 1
@@ -62,6 +62,17 @@ class AddViewController: UIViewController,UITextFieldDelegate{
         
         // 前の画面に戻る処理を作成
         dismiss(animated: true, completion: nil)
+        
+        
+        let alertController = UIAlertController(title: "保存完了", message: "食材の登録が完了しました！", preferredStyle: .alert)
+        
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+    Text.text = ""
+       
     }
         
         

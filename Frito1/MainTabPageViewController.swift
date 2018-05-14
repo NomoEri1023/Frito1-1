@@ -16,7 +16,7 @@ class MainTabPageViewController: TabPageViewController {
     override init() {
         super.init()
         
-        let tc = storyboard?.instantiateViewControllerWithIdentifier("pageView") as! PagenewViewController
+        let tc = storyboard?.instantiateViewController(withIdentifier: "pageView") as! PagenewViewController
         
         let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ListViewController")
         

@@ -13,8 +13,11 @@ import RealmSwift
 class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     @IBOutlet var myTableView: UITableView!
+    
     var FoodItems: [Shouhin] = []
     
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +25,8 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         myTableView.delegate = self
         myTableView.dataSource = self
+        
+        
         
         
         
@@ -51,10 +56,21 @@ return cell
         
         // アラートを作成
         let alert = UIAlertController(title: "編集", message: "選択してください", preferredStyle: .actionSheet)
-        let buttona = UIAlertAction(title: "変更", style: .default, handler: nil)
+        let buttona = UIAlertAction(title: "変更", style: UIAlertActionStyle.default, handler:
+        {(action: UIAlertAction!) in
+            
+            //アラートが消えるのと画面遷移が重ならないように0.5秒後に画面遷移するようにしてる
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                // 0.5秒後に実行したい処理
+                self.performSegue(withIdentifier: "edit", sender: nil)
+            }
+        }
+        )
+        
         
         
         let buttonb = UIAlertAction(title: "削除", style: .destructive, handler: nil)
+        
         let buttonc = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
         
         
@@ -63,8 +79,12 @@ return cell
         alert.addAction(buttonc)
         // アラートを表示
         present(alert, animated: true, completion: nil)
-    }
     
+    
+   
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -85,6 +105,9 @@ return cell
         // Top画面表示時にテーブル内容をリロード
         myTableView.reloadData()
     }
+
+
+    
     
    
 }

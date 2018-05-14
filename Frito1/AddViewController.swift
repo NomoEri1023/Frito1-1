@@ -72,6 +72,9 @@ class AddViewController: UIViewController,UITextFieldDelegate{
         self.present(alertController, animated: true, completion: nil)
         
     Text.text = ""
+    kazu.text = "0.0"
+    
+        
        
     }
         

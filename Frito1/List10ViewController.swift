@@ -1,8 +1,8 @@
 //
-//  ListViewController.swift
+//  List10ViewController.swift
 //  Frito1
 //
-//  Created by 野本エリカ on 2018/05/03.
+//  Created by 野本エリカ on 2018/05/15.
 //  Copyright © 2018年 Life is Tech!. All rights reserved.
 //
 
@@ -10,21 +10,22 @@ import UIKit
 import TabPageViewController
 import RealmSwift
 
-class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+class List10ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
-    @IBOutlet var myTableView: UITableView!
+    @IBOutlet var myTableView10: UITableView!
     
     var FoodItems: [Shouhin] = []
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myTableView.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        myTableView10.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
-        myTableView.delegate = self
-        myTableView.dataSource = self
+        myTableView10.delegate = self
+        myTableView10.dataSource = self
+        
         
         
         
@@ -45,7 +46,7 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         cell.accessoryType = .detailButton
         
-return cell
+        return cell
     }
     
     
@@ -78,9 +79,9 @@ return cell
         alert.addAction(buttonc)
         // アラートを表示
         present(alert, animated: true, completion: nil)
-    
-    
-   
+        
+        
+        
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
     }
@@ -89,7 +90,7 @@ return cell
     }
     
     
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -102,12 +103,11 @@ return cell
         }
         
         // Top画面表示時にテーブル内容をリロード
-        myTableView.reloadData()
+        myTableView10.reloadData()
     }
-
-
     
     
-   
+    
+    
+    
 }
-

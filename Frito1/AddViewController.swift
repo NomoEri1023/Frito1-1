@@ -9,24 +9,66 @@
 import UIKit
 import RealmSwift
 
-class AddViewController: UIViewController,UITextFieldDelegate{
+class AddViewController: UIViewController, UITextFieldDelegate,UIPickerViewDelegate,UIPickerViewDataSource {
     
+    // 選択肢
+    let dataList = ["肉", "魚介", "卵・乳製品", "野菜類", "果物", "加工食品", "穀類", "惣菜", "飲料", "菓子"]
+
     @IBOutlet var shouhin: UILabel!
     @IBOutlet var kosu: UILabel!
     @IBOutlet var Text: UITextField!
     @IBOutlet var kazu: UILabel!
     @IBOutlet var mystepper: UIStepper!
+    @IBOutlet var kategori: UIPickerView!
     @IBAction func mystepperAction(_ sender: UIStepper) {
         
         kazu.isHidden = false
         kazu.text = String(mystepper.value)
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Text.delegate = self
-    }    // Do any additional setup after loading the view.
+        // ピッカーの作成
+        let picker = UIPickerView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100))
+        picker.center = self.view.center
+        
+        // プロトコルの設定
+        picker.delegate = self
+        picker.dataSource = self
+        
+        // はじめに表示する項目を指定
+        picker.selectRow(1, inComponent: 0, animated: true)
+        
+        // 画面にピッカーを追加
+        self.view.addSubview(picker)
+        
+    }// Do any additional setup after loading the view.
     
+    // UIPickerViewDataSource
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        // 表示する列数
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        // アイテム表示個数を返す
+        return dataList.count
+    }
+    
+    // UIPickerViewDelegate
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        // 表示する文字列を返す
+        return dataList[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // 選択時の処理
+        print(dataList[row])
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -55,6 +97,7 @@ class AddViewController: UIViewController,UITextFieldDelegate{
         let addItemObj = Shouhin()
         addItemObj.id = addId
         addItemObj.name = Text.text!
+        
         // 登録処理
         try! realm.write {
             realm.add(addItemObj, update: true)

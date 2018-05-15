@@ -93,6 +93,9 @@ return cell
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        //self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        //self.navigationController!.navigationBar.shadowImage = UIImage()
+        
         // 一覧取得
         let realm = try! Realm()
         let shouhins = realm.objects(Shouhin.self)

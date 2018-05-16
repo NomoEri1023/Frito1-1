@@ -16,8 +16,7 @@ class List3ViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     var FoodItems: [Shouhin] = []
     
-    var text:String!
-    
+    var Fdata: Shouhin!
     
     
     
@@ -45,6 +44,8 @@ class List3ViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         cell.nameLabel?.text = FoodItems[indexPath.row].name
         
+        cell.kazuLabel?.text = String(FoodItems[indexPath.row].number)
+        
         cell.accessoryType = .detailButton
         
         return cell
@@ -53,24 +54,34 @@ class List3ViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         // 選択された品名
-        let sel = FoodItems[indexPath.row].name
+        Fdata = FoodItems[indexPath.row]
         
         // アラートを作成
         let alert = UIAlertController(title: "編集", message: "選択してください", preferredStyle: .actionSheet)
         let buttona = UIAlertAction(title: "変更", style: UIAlertActionStyle.default, handler:
         {(action: UIAlertAction!) in
             
-            //アラートが消えるのと画面遷移が重ならないように0.5秒後に画面遷移するようにしてる
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                // 0.5秒後に実行したい処理
-                self.performSegue(withIdentifier: "edit", sender: nil)
-            }
+            // 0.5秒後に実行したい処理
+            self.performSegue(withIdentifier: "edit", sender: self.Fdata)
+            
         }
         )
         
-        
-        
-        let buttonb = UIAlertAction(title: "削除", style: .destructive, handler: nil)
+        let buttonb = UIAlertAction(title: "削除", style: .destructive, handler: { (ars) in
+            
+            self.FoodItems.remove(at: indexPath.row)
+            
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            let realm = try! Realm()
+            
+            try! realm.write {
+                
+                realm.delete(self.FoodItems)
+                
+            }
+        }
+        )
         
         let buttonc = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
         
@@ -81,11 +92,18 @@ class List3ViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         // アラートを表示
         present(alert, animated: true, completion: nil)
         
-        
-        
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "edit" {
+            let secondViewController = segue.destination as! henkouViewController
+            secondViewController.Fdata = sender as! Shouhin
+            
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -97,11 +115,12 @@ class List3ViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         // 一覧取得
         let realm = try! Realm()
-        let shouhins = realm.objects(Shouhin.self)
+        let shouhins = realm.objects(Shouhin.self).filter("category == %@", "卵・乳製品")
         FoodItems = []
         shouhins.forEach { item in
             FoodItems.append(item)
         }
+            
         
         // Top画面表示時にテーブル内容をリロード
         myTableView3.reloadData()

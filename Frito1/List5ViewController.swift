@@ -46,8 +46,7 @@ class List5ViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         return cell
     }
-    
-    
+   
     
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         // 選択された品名

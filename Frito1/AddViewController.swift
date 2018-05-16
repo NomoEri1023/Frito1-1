@@ -29,6 +29,7 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIPickerViewDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         Text.delegate = self
         // ピッカーの作成
         let picker = UIPickerView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100))
@@ -109,7 +110,7 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIPickerViewDeleg
         
         // 登録処理
         try! realm.write {
-            realm.add(addItemObj, update: true)
+            realm.add(addItemObj, update: false)
         }
         
         // 前の画面に戻る処理を作成

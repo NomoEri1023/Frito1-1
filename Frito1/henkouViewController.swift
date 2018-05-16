@@ -9,11 +9,13 @@
 import UIKit
 import RealmSwift
 
-class henkouViewController: UIViewController, UIPickerViewDelegate {
+class henkouViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var Fdata: Shouhin! // 画面遷移後は ["hello": "こんにちは", "goodbye": "さようなら"]
     
     var categoryArray: [String] = ["肉", "魚介", "卵・乳製品", "野菜類", "果物", "加工食品", "穀類", "惣菜", "飲料", "菓子"]
+    
+    var Selected = ""
     
     @IBOutlet var sholv: UILabel!
     
@@ -31,16 +33,56 @@ class henkouViewController: UIViewController, UIPickerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         //delegate
         self.pick.delegate = self
         
+        // ピッカーの作成
+        let picker = UIPickerView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100))
+        picker.center = self.view.center
         
+        // プロトコルの設定
+        picker.delegate = self
+        picker.dataSource = self
         
+        // はじめに表示する項目を指定
+        picker.selectRow(1, inComponent: 0, animated: true)
+        
+        // 画面にピッカーを追加
+        self.view.addSubview(picker)
+        
+    }// Do any additional setup after loading the view.
+    
+    // UIPickerViewDataSource
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        // 表示する列数
+        return 1
     }
-
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        // アイテム表示個数を返す
+        return categoryArray.count
+    }
+    
+    // UIPickerViewDelegate
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        // 表示する文字列を返す
+        return categoryArray[row]
+    }
+    
+    //func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // 選択時の処理
+        
+        
+        //Selected = categoryArray[row]
+        
+    //}
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -68,7 +110,7 @@ class henkouViewController: UIViewController, UIPickerViewDelegate {
             realm.add(Fdata, update: true)
         }
         
-        
+        self.dismiss(animated: true, completion: nil)
         
     }
     
@@ -76,5 +118,5 @@ class henkouViewController: UIViewController, UIPickerViewDelegate {
         self.kazuLv.text = categoryArray[row]
     }
     
-
+    
 }

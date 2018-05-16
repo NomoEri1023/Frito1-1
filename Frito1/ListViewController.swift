@@ -68,7 +68,9 @@ return cell
         
         
         
-        let buttonb = UIAlertAction(title: "削除", style: .destructive, handler: nil)
+        let buttonb = UIAlertAction(title: "削除", style: .destructive, handler:nil)
+        
+        
         
         let buttonc = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
         
@@ -78,6 +80,8 @@ return cell
         alert.addAction(buttonc)
         // アラートを表示
         present(alert, animated: true, completion: nil)
+        
+        
     
     
    

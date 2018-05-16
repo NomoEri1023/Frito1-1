@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6TQ-QU-gJZ">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,29 +15,28 @@
             <objects>
                 <viewController id="1wL-ly-CGj" customClass="ViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DLv-KJ-kmC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="アートボード 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="TBN-Qb-98F">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="アートボード 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="TBN-Qb-98F">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSP-2R-ZRq">
-                                <rect key="frame" x="-23" y="64" width="294" height="262"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="icon_132342_256.png"/>
-                                <connections>
-                                    <action selector="FridgeCheck:" destination="1wL-ly-CGj" eventType="touchUpInside" id="Iq8-xV-VgE"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fridge Check" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2Z-60-kCI">
-                                <rect key="frame" x="70" y="301" width="305" height="65"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fridge Check" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2Z-60-kCI">
+                                <rect key="frame" x="70" y="293" width="305" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="36"/>
                                 <color key="textColor" red="0.19035532994923854" green="0.19035532994923854" blue="0.19035532994923854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ou-r4-Obf">
+                                <rect key="frame" x="186" y="499" width="160" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon_149282_256.png"/>
+                                <connections>
+                                    <segue destination="zrU-69-Xib" kind="show" id="l5S-7S-3Lv"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add to Fridge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Il-dY-LVM">
                                 <rect key="frame" x="0.0" y="607" width="249" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -46,15 +45,21 @@
                                 <color key="textColor" red="0.19035532990000001" green="0.19035532990000001" blue="0.19035532990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ou-r4-Obf">
-                                <rect key="frame" x="186" y="499" width="160" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSP-2R-ZRq">
+                                <rect key="frame" x="0.0" y="64" width="249" height="262"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="icon_149282_256.png"/>
+                                <state key="normal" image="icon_132342_256.png"/>
                                 <connections>
-                                    <segue destination="zrU-69-Xib" kind="show" id="edP-yg-rGY"/>
+                                    <action selector="FridgeCheck:" destination="1wL-ly-CGj" eventType="touchUpInside" id="Iq8-xV-VgE"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="TBN-Qb-98F" firstAttribute="trailing" secondItem="TEP-dv-H5R" secondAttribute="trailing" id="EsJ-un-ep2"/>
+                            <constraint firstItem="TBN-Qb-98F" firstAttribute="top" secondItem="DLv-KJ-kmC" secondAttribute="top" id="GFr-mg-eQX"/>
+                            <constraint firstItem="TBN-Qb-98F" firstAttribute="leading" secondItem="TEP-dv-H5R" secondAttribute="leading" id="K09-F9-z6p"/>
+                            <constraint firstItem="TBN-Qb-98F" firstAttribute="bottom" secondItem="TEP-dv-H5R" secondAttribute="bottom" id="fdg-ig-HrD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TEP-dv-H5R"/>
                     </view>
                     <navigationItem key="navigationItem" id="5R8-MZ-I0Z"/>
@@ -69,7 +74,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6TQ-QU-gJZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sl8-gp-tiX">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -79,14 +84,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RL7-nt-mE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="266" y="-348"/>
+            <point key="canvasLocation" x="-3750" y="1539"/>
         </scene>
         <!--ListViewController-->
         <scene sceneID="j6K-QN-8Xc">
             <objects>
                 <viewController storyboardIdentifier="ListViewController" title="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uj6-lU-qGx" customClass="ListViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eK5-Zz-NOo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D6z-V6-c6f">
@@ -94,7 +99,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="YA5-3X-7YT" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="YA5-3X-7YT" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YA5-3X-7YT" id="N7B-fy-mLj">
@@ -122,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HG7-Bu-bgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3430" y="-347"/>
+            <point key="canvasLocation" x="-2316" y="-1495"/>
         </scene>
         <!--Pagenew View Controller-->
         <scene sceneID="3i2-TC-jvm">
@@ -137,21 +142,24 @@
             <objects>
                 <viewController storyboardIdentifier="add" title="add" id="zrU-69-Xib" customClass="AddViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uIx-pk-QUe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="商品名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsj-Dd-GaX">
-                                <rect key="frame" x="16" y="103" width="63" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="商品名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsj-Dd-GaX">
+                                <rect key="frame" x="43" y="103" width="63" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                 <color key="textColor" red="0.19035532990000001" green="0.19035532990000001" blue="0.19035532990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="数量" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIj-Uq-ngd">
-                                <rect key="frame" x="16" y="209" width="63" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="数量" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIj-Uq-ngd">
+                                <rect key="frame" x="43" y="207" width="63" height="21"/>
                                 <color key="backgroundColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="Xu4-5v-fbk"/>
+                                    <constraint firstAttribute="height" constant="21" id="geN-6K-fa7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                 <color key="textColor" red="0.19035532990000001" green="0.19035532990000001" blue="0.19035532990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -164,30 +172,37 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STf-MF-yBm">
-                                <rect key="frame" x="63" y="248" width="97" height="37"/>
+                                <rect key="frame" x="43" y="236" width="97" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRn-a2-CgQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Lj-W4-xum">
+                                <rect key="frame" x="-27.5" y="247" width="375" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="RCF-mf-RZb"/>
+                                    <constraint firstAttribute="width" constant="375" id="W4u-Gk-Yc7"/>
+                                </constraints>
+                            </pickerView>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1UC-pF-vAh">
-                                <rect key="frame" x="216" y="252" width="94" height="29"/>
+                                <rect key="frame" x="228" y="240" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="mystepperAction:" destination="zrU-69-Xib" eventType="valueChanged" id="ftp-SR-3xC"/>
                                 </connections>
                             </stepper>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRn-a2-CgQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </navigationBar>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Lj-W4-xum">
-                                <rect key="frame" x="0.0" y="454" width="375" height="213"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YBT-6A-XeA" firstAttribute="bottom" secondItem="0Lj-W4-xum" secondAttribute="bottom" constant="20" id="vbE-iu-xYy"/>
+                            <constraint firstItem="0Lj-W4-xum" firstAttribute="centerX" secondItem="uIx-pk-QUe" secondAttribute="centerX" id="vuh-Bs-Lh2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YBT-6A-XeA"/>
                     </view>
                     <navigationItem key="navigationItem" title="新規追加" id="Sf6-2S-oCu">
@@ -208,14 +223,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="caZ-HS-lBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1884" y="-689.5052473763119"/>
+            <point key="canvasLocation" x="1882.4000000000001" y="-690.40479760119945"/>
         </scene>
         <!--ListViewController-->
         <scene sceneID="TNY-nc-CIf">
             <objects>
                 <viewController storyboardIdentifier="List2ViewController" title="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="waR-go-Lu9" customClass="List2ViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uL4-yk-sxj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ci7-lo-w7G">
@@ -223,7 +238,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="2du-GT-OYH" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="2du-GT-OYH" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2du-GT-OYH" id="Qd6-D2-9Bn">
@@ -251,14 +266,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ilv-ZF-BGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2769" y="-349"/>
+            <point key="canvasLocation" x="-2316" y="-645"/>
         </scene>
         <!--ListViewController-->
         <scene sceneID="WYP-to-rgD">
             <objects>
                 <viewController storyboardIdentifier="List3ViewController" title="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="u1U-SX-aOw" customClass="List3ViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pOt-9H-f7K">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eGU-tG-U1Z">
@@ -266,7 +281,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="XrD-CC-S3y">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="XrD-CC-S3y">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XrD-CC-S3y" id="D7b-LP-7Bh">
@@ -292,14 +307,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OyU-7i-8zU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2134" y="-350"/>
+            <point key="canvasLocation" x="-2316" y="284"/>
         </scene>
         <!--ListViewController-->
         <scene sceneID="VZA-5Q-En8">
             <objects>
                 <viewController storyboardIdentifier="List4ViewController" title="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ypd-MV-SCM" customClass="List4ViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zb2-8M-YmZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xxx-Tn-OvS">
@@ -307,7 +322,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="dce-HG-KwO" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="dce-HG-KwO" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dce-HG-KwO" id="jgc-YC-ZZv">
@@ -335,14 +350,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n15-tq-iat" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1737" y="-350"/>
+            <point key="canvasLocation" x="-2316" y="1106"/>
         </scene>
         <!--ListViewController-->
         <scene sceneID="Hu5-4l-Uhk">
             <objects>
                 <viewController storyboardIdentifier="List5ViewController" title="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uMO-LG-4EI" customClass="List5ViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mgp-oe-hz5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pxg-bS-55P">
@@ -350,7 +365,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="1wL-8q-Xe1" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="1wL-8q-Xe1" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1wL-8q-Xe1" id="use-tm-Vxx">
@@ -359,9 +374,6 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <gestureRecognizers/>
-                                        <connections>
-                                            <segue destination="W93-hh-Fbj" kind="show" identifier="edit" id="iFR-oE-l01"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -374,18 +386,19 @@
                     </navigationItem>
                     <connections>
                         <outlet property="myTableView5" destination="Pxg-bS-55P" id="rto-VS-Sva"/>
+                        <segue destination="W93-hh-Fbj" kind="show" identifier="edit" id="9yN-lg-jp2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYy-4O-dlD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1127" y="-347"/>
+            <point key="canvasLocation" x="-2316" y="1961"/>
         </scene>
         <!--ListViewController-->
         <scene sceneID="Dzs-qC-idk">
             <objects>
                 <viewController storyboardIdentifier="List6ViewController" title="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hv7-EE-JK5" customClass="List6ViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e4r-AF-x9K">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XFv-P3-YsH">
@@ -393,7 +406,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="rb9-Se-5fl" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="rb9-Se-5fl" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rb9-Se-5fl" id="m3b-H6-yJE">
@@ -421,14 +434,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aT1-sf-PLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-495" y="-347"/>
+            <point key="canvasLocation" x="391" y="2278"/>
         </scene>
         <!--ListViewController-->
         <scene sceneID="mCB-yC-1pW">
             <objects>
                 <viewController storyboardIdentifier="List7ViewController" title="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5ds-ej-OGF" customClass="List7ViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vev-jE-K9S">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zen-hv-9vr">
@@ -436,7 +449,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="giv-GT-hNY" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="giv-GT-hNY" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="giv-GT-hNY" id="Kkh-2J-KPx">
@@ -464,14 +477,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Of1-A6-GS0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1644" y="1961"/>
+            <point key="canvasLocation" x="-2316" y="2741"/>
         </scene>
         <!--ListViewController-->
         <scene sceneID="wqC-64-GbD">
             <objects>
                 <viewController storyboardIdentifier="List8ViewController" title="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DBp-rq-IvW" customClass="List8ViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zhy-vQ-sjt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="65x-dI-zPq">
@@ -479,7 +492,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="G3e-zh-DcY" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="G3e-zh-DcY" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G3e-zh-DcY" id="aG1-db-vit">
@@ -507,14 +520,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DH1-5J-xlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1126" y="1961"/>
+            <point key="canvasLocation" x="-2316" y="3468"/>
         </scene>
         <!--ListViewController-->
         <scene sceneID="g7b-ip-DA9">
             <objects>
                 <viewController storyboardIdentifier="List9ViewController" title="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EeG-Dx-mU1" customClass="List9ViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UYV-Wg-wvm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yYb-Pa-2L0">
@@ -522,7 +535,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="SE6-01-lpg" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="SE6-01-lpg" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SE6-01-lpg" id="vP1-qy-xH1">
@@ -550,14 +563,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UE8-rd-Oob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-546" y="1961"/>
+            <point key="canvasLocation" x="-3278" y="3178"/>
         </scene>
         <!--ListViewController-->
         <scene sceneID="LUQ-0N-pYd">
             <objects>
                 <viewController storyboardIdentifier="List10ViewController" title="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="POg-sc-4xO" customClass="List10ViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="77V-Ez-yiX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0f1-RQ-url">
@@ -565,7 +578,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="d3D-zW-eDd" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="d3D-zW-eDd" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d3D-zW-eDd" id="pxB-xg-Zbq">
@@ -593,14 +606,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uha-KI-r7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34" y="1961"/>
+            <point key="canvasLocation" x="-3487" y="2427"/>
         </scene>
         <!--ListViewController-->
         <scene sceneID="esK-QZ-Xbq">
             <objects>
                 <viewController storyboardIdentifier="List11ViewController" title="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lDS-mD-LYy" customClass="List11ViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JPZ-G7-mNA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bZ2-Gj-zaa">
@@ -608,7 +621,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="epR-Qs-YzM" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="epR-Qs-YzM" customClass="ListTableViewCell" customModule="Frito1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="epR-Qs-YzM" id="JVg-Ll-e75">
@@ -636,14 +649,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEd-T3-3vT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588" y="1961"/>
+            <point key="canvasLocation" x="1334" y="3467"/>
         </scene>
         <!--Hennkou-->
         <scene sceneID="ePK-xn-5d1">
             <objects>
-                <viewController storyboardIdentifier="henkou" title="Hennkou" id="W93-hh-Fbj" customClass="AddViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="henkou" title="Hennkou" id="W93-hh-Fbj" customClass="henkouViewController" customModule="Frito1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e1h-JI-vna">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="商品名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vua-9f-R5Q">
@@ -681,15 +694,11 @@
                                 <rect key="frame" x="216" y="252" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="mystepperAction:" destination="W93-hh-Fbj" eventType="valueChanged" id="wSe-Bt-isP"/>
+                                    <action selector="step:" destination="W93-hh-Fbj" eventType="valueChanged" id="C9t-Tp-4MZ"/>
                                 </connections>
                             </stepper>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1jZ-g6-HI5">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </navigationBar>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v0P-Y3-La1">
-                                <rect key="frame" x="0.0" y="454" width="375" height="213"/>
+                                <rect key="frame" x="0.0" y="454" width="320" height="213"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                         </subviews>
@@ -699,17 +708,16 @@
                     <navigationItem key="navigationItem" title="変更" id="wFY-M0-MGP">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="app-Zo-rpS">
                             <connections>
-                                <action selector="addButtonTapped:" destination="W93-hh-Fbj" id="ifL-kO-RVL"/>
+                                <action selector="saveData" destination="W93-hh-Fbj" id="XPG-n6-nmh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="Text" destination="iHe-kl-ARZ" id="RIq-hi-yiQ"/>
-                        <outlet property="kategori" destination="v0P-Y3-La1" id="w7n-2k-lwe"/>
-                        <outlet property="kazu" destination="XT7-f8-kNL" id="k02-qt-Zgi"/>
-                        <outlet property="kosu" destination="2ti-lb-1Ug" id="5eX-RA-dix"/>
-                        <outlet property="mystepper" destination="P2J-6W-6d7" id="w6N-yV-xfq"/>
-                        <outlet property="shouhin" destination="Vua-9f-R5Q" id="mGs-3R-jFy"/>
+                        <outlet property="kazuLv" destination="XT7-f8-kNL" id="BPa-OK-VSq"/>
+                        <outlet property="kazulv" destination="2ti-lb-1Ug" id="1ie-m8-UHB"/>
+                        <outlet property="pick" destination="v0P-Y3-La1" id="9mZ-eC-1AM"/>
+                        <outlet property="sholv" destination="Vua-9f-R5Q" id="N8N-tZ-pNq"/>
+                        <outlet property="shotxf" destination="iHe-kl-ARZ" id="25C-h0-WVt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQK-wz-gUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -723,6 +731,6 @@
         <image name="アートボード 2.png" width="1242" height="2208"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FyF-lC-iPh"/>
+        <segue reference="9yN-lg-jp2"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -13,7 +13,8 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIPickerViewDeleg
     
     // 選択肢
     let dataList = ["肉", "魚介", "卵・乳製品", "野菜類", "果物", "加工食品", "穀類", "惣菜", "飲料", "菓子"]
-
+    var selected = ""
+    
     @IBOutlet var shouhin: UILabel!
     @IBOutlet var kosu: UILabel!
     @IBOutlet var Text: UITextField!
@@ -22,7 +23,6 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIPickerViewDeleg
     @IBOutlet var kategori: UIPickerView!
     @IBAction func mystepperAction(_ sender: UIStepper) {
         
-        kazu.isHidden = false
         kazu.text = String(mystepper.value)
     }
     
@@ -67,7 +67,10 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIPickerViewDeleg
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         // 選択時の処理
-        print(dataList[row])
+       
+        
+        selected = dataList[row]
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -83,9 +86,13 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIPickerViewDeleg
     @IBAction func tapView(_ sender: Any) {
         view.endEditing(true)
     }
-
+    
     @IBAction func addButtonTapped(_ sender: Any) {
         let realm = try! Realm()
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
+        
         // MyItemObjectモデルのデータをIdの降順で取得
         let lastItem = realm.objects(Shouhin.self).sorted(byKeyPath: "id", ascending: false)
         var addId: Int = 1
@@ -97,6 +104,8 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIPickerViewDeleg
         let addItemObj = Shouhin()
         addItemObj.id = addId
         addItemObj.name = Text.text!
+        addItemObj.category = selected
+        addItemObj.number = Double(kazu.text!)!
         
         // 登録処理
         try! realm.write {
@@ -114,15 +123,15 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIPickerViewDeleg
         
         self.present(alertController, animated: true, completion: nil)
         
-    Text.text = ""
-    kazu.text = "0.0"
-    
+        Text.text = ""
+        kazu.text = "0.0"
         
-       
+        
+        
     }
-        
-        
-        
+    
+    
+    
 }
 /*
  // MARK: - Navigation

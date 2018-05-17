@@ -10,14 +10,13 @@ import UIKit
 import TabPageViewController
 import RealmSwift
 
-class List2ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+class List2ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet var myTableView2: UITableView!
     
     var FoodItems: [Shouhin] = []
     
     var Fdata: Shouhin!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +25,8 @@ class List2ViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         myTableView2.delegate = self
         myTableView2.dataSource = self
-        
-        
-        
-        
     }
+    
     
     
     
@@ -56,8 +52,6 @@ class List2ViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         // 選択された品名
         Fdata = FoodItems[indexPath.row]
         
-        
-        
         // アラートを作成
         let alert = UIAlertController(title: "編集", message: "選択してください", preferredStyle: .actionSheet)
         let buttona = UIAlertAction(title: "変更", style: UIAlertActionStyle.default, handler:
@@ -71,17 +65,25 @@ class List2ViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         let buttonb = UIAlertAction(title: "削除", style: .destructive, handler: { (ars) in
             
+            let realm = try! Realm()
+            
+            try! realm.write {
+                realm.delete(self.Fdata)
+            }
+            
             self.FoodItems.remove(at: indexPath.row)
             
             tableView.deleteRows(at: [indexPath], with: .fade)
             
-            let realm = try! Realm()
             
-            try! realm.write {
-                
-                realm.delete(self.FoodItems)
-                
-            }
+            //try! realm.write {
+            
+            
+            
+            //realm.delete(self.FoodItems[indexPath.row])
+            //realm.delete(self.FoodItems)
+            
+            //}
         }
         )
         
@@ -122,16 +124,13 @@ class List2ViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         shouhins.forEach { item in
             FoodItems.append(item)
         }
-            
-    
-    
-    
+        
         // Top画面表示時にテーブル内容をリロード
         myTableView2.reloadData()
-    }
+}
     
     
     
     
-    
+
 }

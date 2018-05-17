@@ -70,17 +70,18 @@ class List7ViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         let buttonb = UIAlertAction(title: "削除", style: .destructive, handler: { (ars) in
             
-            self.FoodItems.remove(at: indexPath.row)
-            
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            
             let realm = try! Realm()
             
             try! realm.write {
                 
-                realm.delete(self.FoodItems)
+                realm.delete(self.Fdata)
                 
             }
+            self.FoodItems.remove(at: indexPath.row)
+            
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            
         }
         )
         

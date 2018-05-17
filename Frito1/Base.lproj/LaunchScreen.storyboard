@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eli-Yf-voq">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,15 +14,18 @@
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" id="eli-Yf-voq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d6U-kL-7Ux">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="アートボード 3.png" translatesAutoresizingMaskIntoConstraints="NO" id="O5C-7J-zFn">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="アートボード 3.png" translatesAutoresizingMaskIntoConstraints="NO" id="O5C-7J-zFn">
+                                <rect key="frame" x="71" y="282" width="273" height="173"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O5C-7J-zFn" firstAttribute="centerX" secondItem="d6U-kL-7Ux" secondAttribute="centerX" id="hjx-rZ-Wus"/>
+                            <constraint firstItem="O5C-7J-zFn" firstAttribute="centerY" secondItem="d6U-kL-7Ux" secondAttribute="centerY" id="qSW-0E-hB4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yBH-7S-VDH"/>
                     </view>
                 </viewController>

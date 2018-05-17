@@ -12,7 +12,7 @@ import RealmSwift
 class AddViewController: UIViewController, UITextFieldDelegate,UIPickerViewDelegate,UIPickerViewDataSource {
     
     // 選択肢
-    let dataList = ["肉", "魚介", "卵・乳製品", "野菜類", "果物", "加工食品", "穀類", "惣菜", "飲料", "菓子"]
+    let dataList = ["肉", "魚介", "卵・乳製品", "野菜類", "果物", "加工食品", "穀類", "調味料", "惣菜", "飲料", "菓子"]
     var selected = ""
     
     @IBOutlet var shouhin: UILabel!
@@ -20,7 +20,7 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIPickerViewDeleg
     @IBOutlet var Text: UITextField!
     @IBOutlet var kazu: UILabel!
     @IBOutlet var mystepper: UIStepper!
-    @IBOutlet var kategori: UIPickerView!
+    
     @IBAction func mystepperAction(_ sender: UIStepper) {
         
         kazu.text = String(mystepper.value)
@@ -32,8 +32,8 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIPickerViewDeleg
         
         Text.delegate = self
         // ピッカーの作成
-        let picker = UIPickerView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100))
-        picker.center = self.view.center
+        let picker = UIPickerView(frame: CGRect(x: 0, y: 450, width: self.view.frame.width, height: 100))
+        
         
         // プロトコルの設定
         picker.delegate = self

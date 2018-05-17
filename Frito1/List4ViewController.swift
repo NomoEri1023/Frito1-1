@@ -25,11 +25,8 @@ class List4ViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         myTableView4.delegate = self
         myTableView4.dataSource = self
-        
-        
-       
-        
     }
+    
     
     
     
@@ -51,9 +48,10 @@ class List4ViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     }
     
     
-    func tableView(_ tableView: UITableView, accessaryttonTappedForRowWith indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         // 選択された品名
         Fdata = FoodItems[indexPath.row]
+        
         // アラートを作成
         let alert = UIAlertController(title: "編集", message: "選択してください", preferredStyle: .actionSheet)
         let buttona = UIAlertAction(title: "変更", style: UIAlertActionStyle.default, handler:
@@ -67,17 +65,25 @@ class List4ViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         let buttonb = UIAlertAction(title: "削除", style: .destructive, handler: { (ars) in
             
+            let realm = try! Realm()
+            
+            try! realm.write {
+                realm.delete(self.Fdata)
+            }
+            
             self.FoodItems.remove(at: indexPath.row)
             
             tableView.deleteRows(at: [indexPath], with: .fade)
             
-            let realm = try! Realm()
             
-            try! realm.write {
-                
-                realm.delete(self.FoodItems)
-                
-            }
+            //try! realm.write {
+            
+            
+            
+            //realm.delete(self.FoodItems[indexPath.row])
+            //realm.delete(self.FoodItems)
+            
+            //}
         }
         )
         
